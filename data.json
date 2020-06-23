@@ -1,0 +1,22 @@
+[
+    {
+        "imageSrc": "images/car1.jpg",
+        "title": "XLIV 500",
+        "description": "The perfect car for your off-road trips !"
+    },
+    {
+        "imageSrc": "images/car2.jpg",
+        "title": "Granland X",
+        "description": "Performatic and economic!"
+    },
+    {
+        "imageSrc": "images/car3.jpg",
+        "title": "Acura NSX",
+        "description": "The best choice if you are looking for power !"
+    },
+    {
+        "imageSrc": "images/car4.jpg",
+        "title": "Porsche 99",
+        "description": "Take a look at this classic !"
+    }
+  ]
