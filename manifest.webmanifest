@@ -7,27 +7,27 @@
     "theme_color": "#ff2945",
     "icons": [
         {
-            "src": "android-icon-36x36.png",
+            "src": "/images/icons/android-icon-36x36.png",
             "type": "image/png",
             "sizes": "32x32"
         },
         {
-            "src": "android-icon-48x48.png",
+            "src": "/images/icons/android-icon-48x48.png",
             "type": "image/png",
             "sizes": "48x48"
         },
         {
-          "src": "android-icon-72x72.png",
+          "src": "/images/icons/android-icon-72x72.png",
           "type": "image/png",
           "sizes": "72x72"
         },
         {
-          "src": "android-icon-96x96.png",
+          "src": "/images/icons/android-icon-96x96.png",
           "type": "image/png",
           "sizes": "96x96"
         },
         {
-          "src": "android-icon-192x192.png",
+          "src": "/images/icons/android-icon-192x192.png",
           "type": "image/png",
           "sizes": "192x192"
         }

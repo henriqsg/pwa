@@ -12,7 +12,17 @@ const FILES_TO_CACHE = [
     'js/bootstrap.min.js',
     'js/jquery-3.5.1.slim.min.js',
     'js/popper.min.js',
-    'js/popper.min.js.map'
+    'js/popper.min.js.map',
+    'app.js',
+    'images/car1.jpg',
+    'images/car2.jpg',
+    'images/car3.jpg',
+    'images/car4.jpg',
+    'images/carroseu-1.jpg',
+    'images/carroseu-2.jpg',
+    'images/carroseu-3.jpg',
+    'data.json',
+    '/'
 ];
 
 //Instala o service worker no browser
@@ -71,12 +81,14 @@ self.addEventListener('activate', (evt) => {
 //             })
 //     );
 
-    self.addEventListener('fetch', (event) => {
+      self.addEventListener('fetch', function(event) {
         event.respondWith(
-          caches.match(event.request)
-            .then((response) => {
-                return response ?? fetch(event.request);
-              }
-            )
-        );
+          fetch(event.request)
+            .catch(() => {
+              return caches.open(CACHE_NAME)
+                .then((cache) => {
+                  return cache.match(event.request)
+                })
+            })
+        )
       });
